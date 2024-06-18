@@ -1,0 +1,33 @@
+.feature {
+    &__forFirstRow {
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    &__forSecondRow {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    &__title,
+    &__blockTitle,
+    &__icon {
+        padding-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__blockTitle {
+        font-size: 40px;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    &__p {
+        font-size: 15px;
+    }
+
+}

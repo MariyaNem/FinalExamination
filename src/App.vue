@@ -1,20 +1,27 @@
 <template>
-  <div class="wrap d-flex flex-column min-vh-100">
-    <Header />
-    <main class="flex-fill">
+  <main-container>
+    <template v-slot:header>
+      <TheHeader />
+    </template>
+    <main>
       <router-view />
     </main>
-    <TheFooter />
-  </div>
+    <template v-slot:footer>
+      <TheFooter />
+    </template>
+
+  </main-container>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
+import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from '@/components/TheFooter.vue'
+import MainContainer from '@/components/MainContainer.vue';
 
 export default {
   components: {
-    Header,
+    MainContainer,
+    TheHeader,
     TheFooter,
   },
 }

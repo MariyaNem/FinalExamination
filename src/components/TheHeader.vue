@@ -46,6 +46,7 @@ export default {
 
 .navbar {
   height: 90px;
+
 }
 
 .navbar-nav {
